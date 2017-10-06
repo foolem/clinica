@@ -1,2 +1,0 @@
-# clinica
-Clínica Veterinária Garibaldi
