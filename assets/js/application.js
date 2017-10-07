@@ -1,4 +1,3 @@
-  $(document).ready(function(){
-    $('.bxslider').bxSlider();
-  });
-
+$('.carousel').carousel({
+  interval: 5000 //3500
+});
