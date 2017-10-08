@@ -76,6 +76,18 @@ html, body {
   background-color: #4abdac;
 }
 
+.text-about {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  text-align: left;
+}
+
+.h1-about {
+  font-size: 10rem !important;
+  color: #ff5722;
+}
+
 
 @media (min-width: 300px) {
   .each-c {
