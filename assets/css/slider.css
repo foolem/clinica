@@ -5,7 +5,7 @@
 #slider{
   margin-top: 70px;
   width:100%;
-  max-height: 700px;
+  max-height: 70%;
   position:relative;
   overflow:hidden;
 }

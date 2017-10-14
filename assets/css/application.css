@@ -10,12 +10,12 @@ html, body {
   -o-transition: all .4s ease-in;
   -webkit-transition: all .4s ease-in;
   transition: all .4s ease-in;
-  background-color: #ff5722;
+  background-color: #3497db;
 }
 
 .opt:hover {
   color: white;
-  background-color: #e44f20;
+  background-color: #2d87c4;
 }
 
 .white-texts:visited {
@@ -44,7 +44,7 @@ html, body {
 .top-bar {
   width: 100%;
   height: 30px;
-  background-color: #f76f44;
+  background-color: #4ca7e6;
   color: white;
   text-align: center;
 }
@@ -82,6 +82,9 @@ html, body {
 .bg-deep-orange {
   background-color: #ff5722;
 }
+.bg-nav-blue {
+  background-color: #3497db;
+}
 .bg-dark-blue {
   background-color: #0288d1; }
 
@@ -100,11 +103,43 @@ html, body {
 .divider-color {
   background-color: #BDBDBD;
 }
+.d-none {
+  display: none;
+  transition:
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('Preloader_2.gif') 50% 50% no-repeat rgb(255, 255, 255);
+
+}
 
 .fz-5 {
   font-size: 5rem;
 }
 
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
 /* Sweep To Top */
 .hvr-sweep-to-top {
   display: inline-block;
@@ -200,7 +235,7 @@ html, body {
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #03a9f4;
+  background: #ff5722;
   height: 5px;
   -webkit-transition-property: right;
   transition-property: right;
