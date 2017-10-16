@@ -1,5 +1,5 @@
-
 $(document).ready(function(){
+  
   setTimeout(function(){
     $('#loader').addClass('animated fadeOut d-none');
   }, 3500);

@@ -38,6 +38,7 @@
   background-color:#73bcff;
   position: relative;
   margin-bottom: 300px;
+  padding: 0 0 30px 0;
 }
 @media (min-width: 300px) {
   .each-c {

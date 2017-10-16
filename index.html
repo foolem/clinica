@@ -16,16 +16,18 @@
     <script src="https://use.fontawesome.com/91914a0aa4.js"></script>
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/application.css">
-    <link rel="stylesheet" href="assets/css/content-slider.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/content-slider.css">
+
     <script src="assets/js/application.js"></script>
 
   </head>
   <body>
+    <!--
+production  -->
     <div id="loader" class="loader"></div>
-
     <div id="top-nav" class="fixed-top">
       <div id="top-bar" class="top-bar">
         <div class="container">
@@ -61,68 +63,12 @@
 
 
     <!-- Slider -->
-    <div id="slider">
-      <div class="slides">
-        <div class="slider">
-          <div class="legend"></div>
-          <div class="content">
-            <div class="content-txt">
-              <h1 class="h1-slider">Lorem ipsum dolor</h1>
-              <h2 class="h2-slider">Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
-            </div>
-          </div>
-          <div class="image">
-            <img src="assets/img/dog-1.jpeg">
-          </div>
-        </div>
-        <div class="slider">
-          <div class="legend"></div>
-          <div class="content">
-            <div class="content-txt">
-              <h1 class="h1-slider">Lorem ipsum dolor</h1>
-              <h2 class="h2-slider">Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
-            </div>
-          </div>
-          <div class="image">
-            <img src="assets/img/cat-2.jpeg">
-          </div>
-        </div>
-        <div class="slider">
-          <div class="legend"></div>
-          <div class="content">
-            <div class="content-txt">
-              <h1 class="h1-slider">Lorem ipsum dolor</h1>
-              <h2 class="h2-slider">Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
-            </div>
-          </div>
-          <div class="image">
-            <img src="assets/img/dog-2.jpeg">
-          </div>
-        </div>
-        <div class="slider">
-          <div class="legend"></div>
-          <div class="content">
-            <div class="content-txt">
-              <h1 class="h1-slider">Lorem ipsum dolor</h1>
-              <h2 class="h2-slider">Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
-            </div>
-          </div>
-          <div class="image">
-            <img src="assets/img/dog-4.jpeg">
-          </div>
-        </div>
-
-      </div>
-      <div class="switch">
-        <ul>
-          <li>
-            <div class="on"></div>
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+    <div class="slider-wrap">
+      <div class="single-slide" id="slide-1"></div>
+      <div class="single-slide" id="slide-2"></div>
+      <div class="single-slide" id="slide-3"></div>
+      <div class="single-slide" id="slide-4"></div>
+      <div class="single-slide" id="slide-5"></div>
     </div>
 
 
@@ -183,40 +129,38 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d450.6757766022656!2d-49.26376148681403!3d-25.357698946236116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76aa616a42fcba46!2sCl%C3%ADnica+Veterin%C3%A1ria+e+Pet+Garibaldi!5e0!3m2!1sen!2sus!4v1507591157359" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
-
-    <div class="comments text-center pb-5 pt-5 white-texts">
-      <h1>O que nossos clientes dizem?</h1>
-
-
-
-
-      <div class="slider-content">
-        <input type="radio" name="slider-content" title="slide1" checked="checked" class="slider__nav"/>
-        <input type="radio" name="slider-content" title="slide2" class="slider__nav"/>
-        <input type="radio" name="slider-content" title="slide3" class="slider__nav"/>
-        <input type="radio" name="slider-content" title="slide4" class="slider__nav"/>
-        <div class="slider__inner">
-          <div class="slider__contents"><i class="slider__image fa fa-home"></i>
-            <h2 class="slider__caption">HTML / CSS3 Only Content Slider Example</h2>
-            <p class="slider__txt">Etiam porttitor lectus in iaculis egestas. Pellentesque in neque sollicitudin, tempor quam vel, rhoncus felis. Integer bibendum posuere mauris id ultricies.</p>
-          </div>
-          <div class="slider__contents"><i class="slider__image fa fa-facebook"></i>
-            <h2 class="slider__caption">Facebook</h2>
-            <p class="slider__txt">Etiam porttitor lectus in iaculis egestas. Pellentesque in neque sollicitudin, tempor quam vel, rhoncus felis. Integer bibendum posuere mauris id ultricies.</p>
-          </div>
-          <div class="slider__contents"><i class="slider__image fa fa-google-plus"></i>
-            <h2 class="slider__caption">Google Plus</h2>
-            <p class="slider__txt">Etiam porttitor lectus in iaculis egestas. Pellentesque in neque sollicitudin, tempor quam vel, rhoncus felis. Integer bibendum posuere mauris id ultricies.</p>
-          </div>
-          <div class="slider__contents"><i class="slider__image fa fa-twitter"></i>
-            <h2 class="slider__caption">Twitter</h2>
-            <p class="slider__txt">Etiam porttitor lectus in iaculis egestas. Pellentesque in neque sollicitudin, tempor quam vel, rhoncus felis. Integer bibendum posuere mauris id ultricies.</p>
-          </div>
-        </div>
+    <div class="comments">
+      <h1 class="text-center fz-5 white-texts">O que nossos clientes dizem?</h1>
+      <div id="slider-content">
+        <ul id="ul">
+          <li id="li">
+            <div class="slider-content-container">
+              <h4 id="h4">Pure CSS slider Content</h4>
+              <p id="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+            </div>
+          </li>
+          <li id="li">
+            <div class="slider-content-container">
+              <h4 id="h4">Pure CSS slider Content</h4>
+              <p id="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+            </div>
+          </li>
+          <li id="li">
+            <div class="slider-content-container">
+              <h4 id="h4">Pure CSS slider Content</h4>
+              <p id="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+            </div>
+          </li>
+          <li id="li">
+            <div class="slider-content-container">
+              <h4 id="h4">Pure CSS slider Content</h4>
+              <p id="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+            </div>
+          </li>
+        </ul>
       </div>
+
     </div>
-
-
 
     <footer class="footer bg-nice-gray">
       <div class="container">
