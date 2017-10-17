@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  
+  $(function () {
+    $(".rslides").responsiveSlides();
+  });
   setTimeout(function(){
     $('#loader').addClass('animated fadeOut d-none');
   }, 3500);
