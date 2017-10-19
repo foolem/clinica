@@ -20,11 +20,11 @@ html, body {
 }
 
 .white-texts:visited {
-  color: #fff;
+  color: #fff !important;
 }
 
 .white-texts {
-  color: #fff;
+  color: #fff !important;
 }
 
 .logo {
