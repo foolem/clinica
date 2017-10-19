@@ -1,103 +1,204 @@
+@media only screen and (max-width: 760px) {
+	#carousel {
+	position: relative;
+	width:100%;
+	margin:0 auto;
+	}
 
-
-/**** slider-content-c ****/
-
-#slider-content, #ul
-{
-	height: 200px;
-}
-
-#slider-content
-{
-	margin: auto;
-  background-color: #fff;
+	#slides {
 	overflow: hidden;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	border-radius: 10px;
-	box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
 	position: relative;
-	width: 600px;
-}
+	width: 100%;
+	height: 250px;
+	}
 
-#slider-content #li
-{
-	float: left;
-	position: relative;
-	width: 600px;
-	display: inline-block;
-	height: 200px;
-}
-
-#slider-content #ul
-{
+	#slides ul {
 	list-style: none;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 9000px;
-	transition: left .3s linear;
-	-moz-transition: left .3s linear;
-	-o-transition: left .3s linear;
-	-webkit-transition: left .3s linear;
-	margin-left: -25px;
-  font-family: century gothic;
-  color: #666;
-}
-
-/*** Content ***/
-
-.slider-content-container
-{
-	margin: 0 auto;
+	width:100%;
+	height:250px;
+	margin: 0;
 	padding: 0;
-	width: 550px;
-  min-height: 180px;
-  border-bottom: 1px solid #ccc;
+	position: relative;
+	}
+
+	 #slides li {
+	width:100%;
+	height:250px;
+	float:left;
+	text-align: center;
+	position: relative;
+	font-family:lato, sans-serif;
+	}
+	/* Styling for prev and next buttons */
+	.btn-bar{
+	    max-width: 346px;
+	    margin: 0 auto;
+	    display: inline-block;
+	    position: relative;
+	    top: 40px;
+	    width: 100%;
+	}
+
+	 #buttons {
+	padding:0 0 5px 0;
+	float:right;
+	}
+
+	#buttons a {
+	text-align:center;
+	display:inline-block;
+	font-size:50px;
+	float:left;
+	outline:0;
+	margin:0 60px;
+	color:#b14943;
+	text-decoration:none;
+	padding:9px;
+	width:35px;
+	}
+
+	a#prev:hover, a#next:hover {
+	color:#FFF;
+	text-shadow:.5px 0px #b14943;
+	}
+
+	.quote-phrase, .quote-author {
+	font-family:sans-serif;
+	font-weight:300;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 5px 20px;
+	font-family:'Lato', Calibri, Arial, sans-serif;
+	}
+
+	.quote-phrase {
+	height: 200px;
+	font-size:24px;
+	color:#FFF;
+	font-style:italic;
+	text-shadow:.5px 0px #b14943;
+	}
+
+	.quote-marks {
+	font-size:30px;
+	padding:0 3px 3px;
+	position:inherit;
+	}
+
+	.quote-author {
+	font-style:normal;
+	font-size:20px;
+	color:#b14943;
+	font-weight:400;
+	height: 30px;
+	}
+
+	.quoteContainer, .authorContainer {
+	display: table;
+	width: 100%;
+	}
+
+}
+@media only screen and (min-width: 761px) {
+#carousel {
+position: relative;
+width:60%;
+margin:0 auto;
 }
 
-.slider-content-container #h4
-{
- 	color: #0A7FAD;
-  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.50);
+#slides {
+overflow: hidden;
+position: relative;
+width: 100%;
+height: 300px;
+background-color: dimgrey;
+border-radius: 5px;
 }
 
-.slider-content-container  #p
-{
-	margin: 10px 25px;
-	font-weight: semi-bold;
-	line-height: 150%;
-	text-align: justify;
+#slides ul {
+list-style: none;
+width:100%;
+height:300px;
+margin: 0;
+padding: 0;
+position: relative;
 }
 
-/*** target hooks ****/
+ #slides li {
+width:100%;
+height:300px;
+float:left;
+text-align: center;
+position: relative;
+font-family:lato, sans-serif;
+}
+/* Styling for prev and next buttons */
 
-@-webkit-keyframes slide-animation {
-	0% {opacity:0;}
-	2% {opacity:1;}
-	20% {left:0px; opacity:1;}
-	22.5% {opacity:0.6;}
-	25% {left:-600px; opacity:1;}
-	45% {left:-600px; opacity:1;}
-	47.5% {opacity:0.6;}
-	50% {left:-1200px; opacity:1;}
-	70% {left:-1200px; opacity:1;}
-	72.5% {opacity:0.6;}
-	75% {left:-1800px; opacity:1;}
-	95% {opacity:1;}
-	98% {left:-1800px; opacity:0;}
-	100% {left:0px; opacity:0;}
+.btn-bar{
+		max-width: 200px;
+		margin: 0 auto !important;
+		display: flex;
+		width: 100%;
 }
 
-#slider-content #ul
-{
-	-webkit-animation: slide-animation 25s infinite;
+#buttons {
+	padding:0 0 5px 0;
+	bottom:0;
+	position: absolute;
+	margin: -20px auto;
+	text-align: center;
 }
 
-/* use to paused the content on mouse over */
+#buttons a {
+text-align:center;
+display:inline-block;
+font-size:50px;
+outline:0;
+margin:0 30px;
+color:white;
+text-decoration:none;
+padding:9px;
+width:35px;
+}
 
-#slider-content #ul:hover
-{
-	-moz-animation-play-state: paused;
-	-webkit-animation-play-state: paused;
+a#prev:hover, a#next:hover {
+color:#ff852d;
+text-shadow:.5px 0px #b14943;
+}
+
+.quote-phrase, .quote-author {
+font-family:sans-serif;
+font-weight:300;
+display: table-cell;
+vertical-align: middle;
+padding: 5px 20px;
+font-family:'Lato', Calibri, Arial, sans-serif;
+}
+
+.quote-phrase {
+height: 200px;
+font-size:24px;
+color:#FFF;
+font-style:italic;
+text-shadow:.5px 0px #b14943;
+}
+
+.quote-marks {
+font-size:30px;
+padding:0 3px 3px;
+position:inherit;
+}
+
+.quote-author {
+font-style:normal;
+font-size:20px;
+color:#4b96d4;
+font-weight:400;
+height: 30px;
+}
+
+.quoteContainer, .authorContainer {
+display: table;
+width: 100%;
+}
 }
