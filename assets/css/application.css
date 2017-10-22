@@ -8,8 +8,8 @@ html, body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgb(230, 230, 230);
-    color: rgb(125, 193, 255);
+    background: rgb(64, 64, 64);
+    color: rgb(238, 238, 238);
     position: fixed;
     bottom: 1rem;
     right: 1rem;
@@ -20,7 +20,10 @@ html, body {
 #toTop:hover {
   cursor: pointer;
 }
-
+.logo {
+  width: auto;
+  height: auto;
+}
 .opt {
   height: 100%;
   padding: 30px 15px 25px 15px;
@@ -48,6 +51,13 @@ html, body {
   width: 40%;
   height: 100%; }
 
+  .top-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #47a4e3;
+    color: white;
+    text-align: center;
+  }
 .footer {
   width: 100%;
   height: 300px;
@@ -58,13 +68,6 @@ html, body {
   position: fixed;
   margin-top:100px;
 
-}
-.top-bar {
-  width: 100%;
-  height: 30px;
-  background-color: #e69a4c;
-  color: white;
-  text-align: center;
 }
 
 
@@ -92,6 +95,9 @@ html, body {
 .mb-0 {
   margin-bottom: 0;
 }
+.mb-footer {
+  margin-bottom: 280px;
+}
 
 .fixed {
   z-index: 10;
@@ -100,6 +106,9 @@ html, body {
 
 .color-deep-orange {
   color: #ff5722;
+}
+.color-white {
+  color: #f1f1f1;
 }
 .bg-nice-gray {
   background-color: rgb(50, 50, 50);
@@ -143,11 +152,14 @@ html, body {
 
 }
 
-.fz-5 {
-  font-size: 5rem;
-}
 .fz-1 {
   font-size: 1rem;
+}
+.fz-2 {
+  font-size:2rem;
+}
+.fz-5 {
+  font-size: 5rem;
 }
 @media only screen and (max-width:760px) {
   .fz-1 {
@@ -244,17 +256,24 @@ html, body {
   height: 100%;
 }
 .about-txt {
-  display: inline-block;
+
   width: 40%;
   margin: 0 auto;
 }
 .about-img {
-  display: inline-block;
+
   width: 40%;
   margin: 0 5rem;
 }
+.fa-4-5x {
+  margin-top: 20px !important;
+  font-size: 4.5rem !important;
+}
 .fa-15x {
   font-size: 15rem !important;
+}
+.mt-10 {
+  margin-top: 10rem !important;
 }
 
 /* /sobre */
@@ -294,7 +313,17 @@ html, body {
 }
 /* /especialidades */
 
+/* contato */
 
+.contact {
+  width: 100%;
+  height: auto;
+  background-color: rgb(61, 90, 191);
+  padding: 30px 0 30px 0;
+}
+
+
+/* /contato */
 
 .animated {
   animation-duration: 1s;
@@ -420,4 +449,27 @@ html, body {
 }
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
   right: 0;
+}
+
+/* Flip */
+
+.hvr-flips {
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transform: rotateY(180deg);
+-webkit-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);
+-ms-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+.hvr-flips-back {
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transform: rotateY(0deg);
+-webkit-transform: rotateY(0deg);
+-o-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+transform: rotateY(0deg);
 }

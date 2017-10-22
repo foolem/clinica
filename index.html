@@ -26,11 +26,22 @@
 
 
     <script src="assets/js/responsiveslides.min.js"></script>
+    <script src="assets/js/contentslider.min.js"></script>
     <script src="assets/js/application.js"></script>
 
 
   </head>
   <body>
+
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
 
     <!--
 production
@@ -46,7 +57,9 @@ production
       </div>
       <nav id="nav" class="navbar navbar-expand-lg navbar-light px-0 py-0 bg-nav-blue">
         <div class="container">
-          <a class="navbar-brand white-texts text-center" href="#" style="color:#fff">Garibaldi<br>Clínica veterinária</a>
+          <a class="navbar-brand white-texts text-center" href="#" style="color:#fff">
+            Garibaldi<br>Clínica Veterinária
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,13 +69,16 @@ production
             <ul class="nav">
 
               <li class="nav-item">
-                <a class="nav-link white-texts opt hvr-underline-from-left" href="index.html">Inicial</a>
+                <a id="initial-anchor" class="nav-link white-texts opt hvr-underline-from-left" href="#initial">Inicial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link white-texts opt hvr-underline-from-left" href="about.html">Sobre</a>
+                <a id="where-anchor" class="nav-link white-texts opt hvr-underline-from-left" href="#where">Onde</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link white-texts opt hvr-underline-from-left" href="contact.html">Contato</a>
+                <a id="about-anchor" class="nav-link white-texts opt hvr-underline-from-left" href="#about">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a id="contact-anchor" class="nav-link white-texts opt hvr-underline-from-left" href="#contact">Contato</a>
               </li>
             </ul>
           </div>
@@ -83,23 +99,23 @@ production
 
 
 
-  <div class="main-p bg-very-light-blue">
+  <div id="initial" class="main-p bg-very-light-blue">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 mt-5 hvr-float">
+        <div id="do-flip" class="col-lg-6 mt-5 hvr-float do-flip">
           <div class="card">
             <div class="card-block bg-light p-40">
-              <h3 class="card-title text-center"><div class="circle"><i class="fa fa-stethoscope fa-3x color-deep-orange mt-3"></i></div><br>Consulta</h3>
+              <h3 class="card-title text-center"><div class="circle"><i id="flip" class="fa fa-stethoscope fa-3x color-deep-orange mt-3"></i></div><br>Consulta</h3>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <a href="#" class="btn bg-dark-blue white-texts float-right">Conheça mais</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 mt-5 hvr-float">
+        <div id="do-flip2" class="col-lg-6 mt-5 hvr-float do-flip">
           <div class="card">
             <div class="card-block bg-light p-40">
-              <h3 class="card-title text-center"><div class="circle"><i class="fa fa-shower fa-3x color-deep-orange mt-3"></i></div><br>Banho e tosa</h3>
+              <h3 class="card-title text-center"><div class="circle"><i id="flip2" class="fa fa-shower fa-4-5x color-deep-orange mt-3"></i></div><br>Banho e tosa</h3>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <a href="#" class="btn bg-dark-blue white-texts float-right">Conheça mais</a>
@@ -108,20 +124,20 @@ production
         </div>
 
 
-        <div class="col-lg-6 mt-5 hvr-float">
+        <div id="do-flip3" class="col-lg-6 mt-5 hvr-float do-flip">
           <div class="card">
             <div class="card-block bg-light p-40">
-              <h3 class="card-title text-center"><div class="circle"><i class="fa fa-heartbeat fa-3x color-deep-orange mt-4"></i></div><br>Cirurgia</h3>
+              <h3 class="card-title text-center"><div class="circle"><i id="flip3" class="fa fa-heartbeat fa-3x color-deep-orange mt-4"></i></div><br>Cirurgia</h3>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiulgod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <a href="#" class="btn bg-dark-blue white-texts float-right">Conheça mais</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 mt-5 hvr-float">
+        <div id="do-flip4" class="col-lg-6 mt-5 hvr-float do-flip">
           <div class="card">
             <div class="card-block bg-light p-40">
-              <h3 class="card-title text-center"><div class="circle"><i class="fa fa-shopping-basket fa-3x color-deep-orange mt-3"></i></div><br>Pet shop</h3>
+              <h3 class="card-title text-center"><div class="circle"><i id="flip4" class="fa fa-shopping-basket fa-3x color-deep-orange mt-3"></i></div><br>Pet shop</h3>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiulgod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <a href="#" class="btn bg-dark-blue white-texts float-right">Conheça mais</a>
@@ -132,7 +148,7 @@ production
     </div>
 
   </div>
-    <div class="where bg-dark-blue">
+    <div id="where" class="where bg-dark-blue">
       <h1 class="text-center fz-5 white-texts">Onde fica?</h1><h5 class="text-center white-texts ">Av. Anita Garibaldi, 6525 - Cachoeira, Curitiba.</h5>
       <div id="map" class="where-map embed-responsive embed-responsive-16by9">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d450.6757766022656!2d-49.26376148681403!3d-25.357698946236116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76aa616a42fcba46!2sCl%C3%ADnica+Veterin%C3%A1ria+e+Pet+Garibaldi!5e0!3m2!1sen!2sus!4v1507591157359" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -188,11 +204,10 @@ production
   </div>
 
 
-    <div class="about-main">
-
+    <div id="about" class="about-main">
 
       <div class="container">
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-sm">
             <h1 class="text-center fz-5 white-texts">Sobre nós</h1>
             <h5 class="mb-0">
@@ -206,20 +221,87 @@ production
             </h5>
           </div>
           <div class="col-sm text-center">
-            <i class="fa fa-home fa-15x " style="color:rgb(69, 110, 255)"></i>
-
+            <i class="fa fa-home fa-15x mt-5" style="color:rgb(69, 110, 255)"></i>
           </div>
 
         </div>
+        <div class="row mt-5">
+          <div class="col-sm text-center">
+            <i class="fa fa-check-circle-o fa-15x mt-5" style="color:rgb(69, 110, 255)"></i>
+          </div>
+          <div class="col-sm">
+            <h1 class="text-center fz-5 white-texts">Especialidades</h1>
+            <h5 class="mb-0">
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk
+            </h5>
+          </div>
+
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="col-sm">
+            <h1 class="text-center fz-5 white-texts">Serviços</h1>
+            <h5 class="mb-0">
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk msm
+              a gente eh pika msm em varias coisa barias lingua tudo punk
+            </h5>
+          </div>
+
+          <div class="col-sm text-center">
+            <i class="fa fa-list-alt fa-15x mt-5" style="color:rgb(69, 110, 255)"></i>
+          </div>
+        </div>
       </div>
+    </div>
 
+    <div id="contact" class="contact mb-footer">
+      <div class="container">
+        <h1 class="text-center fz-5 white-texts">Fale conosco</h1>
+        <div class="row text-center">
+          <div class="col-lg-4 col-sm-12 color-white">
+            <i class="fa fa-facebook-official fa-5x mt-5"></i>
+            <p class="fz-2">
+              Curta a página!
+              <div class="fb-page" data-href="https://www.facebook.com/FoolemDesign/" data-tabs="timeline" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/FoolemDesign/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FoolemDesign/">Foolem Design</a></blockquote></div>
+            </p>
+          </div>
+          <div class="col-lg-4 col-sm-12 color-white">
+            <i class="fa fa-whatsapp fa-5x mt-5"></i>
+            <p class="fz-2">
+              Nosso Whatsapp!<br>
+            </p>
+            <p class="fz-2">
+              41 99999 6584
+            </p>
+          </div>
+          <div class="col-lg-4 col-sm-12 color-white">
+            <i class="fa fa-phone fa-5x mt-5"></i>
+            <p class="fz-2">
+              Ligue para nós!<br>
+              <p class="fz-2">
+              41 3354 0025
+              </p>
 
+            </p>
 
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer bg-nice-gray">
       <div class="container">
-        <div class="row">
+        <div class="row mt-5">
           <div class="col">
             Clínica Veterinária<br>Garibaldi
           </div>
@@ -232,7 +314,7 @@ production
             <li>Internamento</li>
           </div>
           <div class="col">
-            (41) 3585-4186<br>Av. Anita Garibaldi, 6525 - Cachoeira, Curitiba.<br><br>(página no facebook)
+            (41) 3585-4186<br>Av. Anita Garibaldi, 6525 - Cachoeira, Curitiba.<br><br>
           </div>
 
         </div>
