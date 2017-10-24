@@ -51,13 +51,13 @@ html, body {
   width: 40%;
   height: 100%; }
 
-  .top-bar {
-    width: 100%;
-    height: 30px;
-    background-color: #47a4e3;
-    color: white;
-    text-align: center;
-  }
+.top-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #47a4e3;
+  color: white;
+  text-align: center;
+}
 .footer {
   width: 100%;
   height: 300px;
@@ -108,7 +108,7 @@ html, body {
   color: #ff5722;
 }
 .color-white {
-  color: #f1f1f1;
+  color: #3497db;/*#f1f1f1*/
 }
 .bg-nice-gray {
   background-color: rgb(50, 50, 50);
@@ -194,7 +194,8 @@ html, body {
   height: 100%;
   max-height: 100%;
   padding-top: 15px;
-  padding-bottom: 140px;
+  padding-bottom: 100px;
+  background-color: #87d7fc;
   color: #212121;
 }
 .where-map {
@@ -220,7 +221,7 @@ html, body {
 .comments {
   width: 100%;
   height: auto;
-  background-color:#73bcff;
+  background-color:#74d0fa; /*#73bcff*/
   position: relative;
   padding: 15px 0 100px 0;
 }
@@ -236,6 +237,14 @@ html, body {
 
 /* sobre */
 
+.thing {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  margin-right: 900px;
+  background-color: rgb(231, 69, 79);
+}
+
 .circle-about {
   margin: 5px auto;
   width: 60px;
@@ -247,7 +256,7 @@ html, body {
 .about-main {
   width: 100%;
   height: auto;
-  background-color: #b3e5fc;
+  background-color: #ffd24a;/*#b3e5fc*/
   padding: 30px 0 30px 0;
 }
 
@@ -270,12 +279,68 @@ html, body {
   font-size: 4.5rem !important;
 }
 .fa-15x {
-  font-size: 15rem !important;
+  font-size: 20rem !important;
 }
 .mt-10 {
   margin-top: 10rem !important;
 }
-
+.about-icons-ab {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 70%;
+  margin: 0 auto;
+}
+.about-icons-ab img {
+  margin: 0 -80px;
+}
+.about-icon-cat {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 72%;
+  margin: 0 auto;
+}
+.about-icon-cat img {
+  margin: 0 -80px;
+}
+.about-icons-sp {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 15%;
+  margin: 0 auto;
+}
+.about-icons-sp img {
+  margin: 0 -40px;
+}
+.about-icons-se {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin: 0 auto;
+}
+.about-icons-se img {
+  margin: 0 -25px;
+}
+@media only screen and (max-width:760px){
+  .about-icons-se {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin: 0 auto;
+  }
+  .about-icons-se img {
+    margin: 0 -40px;
+  }
+}
 /* /sobre */
 
 /* especialidades */
@@ -318,7 +383,7 @@ html, body {
 .contact {
   width: 100%;
   height: auto;
-  background-color: rgb(61, 90, 191);
+  background-color: rgb(255, 255, 255);
   padding: 30px 0 30px 0;
 }
 

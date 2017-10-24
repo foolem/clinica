@@ -12,7 +12,6 @@
 	margin: 0 auto;
 	width: 90%;
 	height: auto;
-	background-color: dimgrey;
 	}
 
 	#slides ul {
@@ -24,36 +23,33 @@
 	position: relative;
 	}
 
-	 #slides li {
+	#slides li {
 	width:100%;
 	height:auto;
 	float:left;
 	text-align: center;
 	position: relative;
-	font-family:lato, sans-serif;
 	}
 	/* Styling for prev and next buttons */
 	.btn-bar{
-	    max-width: 346px;
-	    margin: 0 auto;
-	    display: inline-block;
-	    position: relative;
-	    top: 40px;
-	    width: 100%;
-	}
+	 max-width: 346px;
+	 margin: 0 auto;
+	 display: inline-block;
+	 position: relative;
+	 width: 100%;
+	 }
 
 	 #buttons {
 	padding:0 0 5px 0;
-	float:right;
+	display: inline-block;
 	}
 
 	#buttons a {
 	text-align:center;
 	display:inline-block;
 	font-size:50px;
-	float:left;
 	outline:0;
-	margin:0 60px;
+	margin:0 3.5rem;
 	color:#f1f1f1;
 	text-decoration:none;
 	padding:9px;
@@ -61,25 +57,22 @@
 	}
 
 	a#prev:hover, a#next:hover {
-	color:#3daff9;
-	text-shadow:.5px 0px #2faaf9;
+	color:#ff852d;
+	text-shadow:.5px 0px #737373;
 	}
 
 	.quote-phrase, .quote-author {
-	font-family:sans-serif;
 	font-weight:300;
 	display: table-cell;
 	vertical-align: middle;
 	padding: 5px 20px;
-	font-family:'Lato', Calibri, Arial, sans-serif;
 	}
 
 	.quote-phrase {
 	height: 200px;
 	font-size:24px;
 	color:#FFF;
-	font-style:italic;
-	text-shadow:.5px 0px #b14943;
+	text-shadow:.5px 0px #737373;
 	}
 
 	.quote-marks {
@@ -91,7 +84,7 @@
 	.quote-author {
 	font-style:normal;
 	font-size:20px;
-	color:#b14943;
+	color:#5b5b5b;
 	font-weight:400;
 	height: 30px;
 	}
@@ -114,7 +107,6 @@ overflow: hidden;
 position: relative;
 width: 100%;
 height: 300px;
-background-color: dimgrey;
 border-radius: 5px;
 }
 
@@ -133,7 +125,6 @@ height:300px;
 float:left;
 text-align: center;
 position: relative;
-font-family:lato, sans-serif;
 }
 /* Styling for prev and next buttons */
 
@@ -166,24 +157,22 @@ width:35px;
 
 a#prev:hover, a#next:hover {
 color:#ff852d;
-text-shadow:.5px 0px #b14943;
+text-shadow:.5px 0px #737373;
 }
 
 .quote-phrase, .quote-author {
-font-family:sans-serif;
 font-weight:300;
 display: table-cell;
 vertical-align: middle;
 padding: 5px 20px;
-font-family:'Lato', Calibri, Arial, sans-serif;
 }
 
 .quote-phrase {
 height: 200px;
 font-size:24px;
 color:#FFF;
-font-style:italic;
-text-shadow:.5px 0px #b14943;
+
+text-shadow:.5px 0px #737373;
 }
 
 .quote-marks {
@@ -195,7 +184,7 @@ position:inherit;
 .quote-author {
 font-style:normal;
 font-size:20px;
-color:#4b96d4;
+color:#5b5b5b;
 font-weight:400;
 height: 30px;
 }
