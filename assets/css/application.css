@@ -253,10 +253,21 @@ html, body {
   background-color: #b3e5fc;
 }
 
+@media only screen and (max-width:760px) {
+  #about-desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width:761px) {
+  #about-phone {
+    display: none !important;
+  }
+}
+
 .about-main {
   width: 100%;
   height: auto;
-  background-color: #b15efb;/*#b3e5fc*/
+  background-color: #825efb;/*#b3e5fc*/
   padding: 30px 0 30px 0;
 }
 
