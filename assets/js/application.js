@@ -59,15 +59,11 @@ $(document).ready(function() {
 		}
 	});
 	$("#toTop").click(function() {
-		//1 second of animation time
-		//html works for FFX but not Chrome
-		//body works for Chrome but not FFX
-		//This strange selector seems to work universally
 		$("html, body").animate({
 			scrollTop: 0
 		}, 1000);
 	});
-	
+
 	$(function() {
 		$(".rslides").responsiveSlides();
 	});
@@ -83,4 +79,8 @@ $(document).ready(function() {
 			$("#nav").css("margin-top", 0);
 		}
 	});
+
+	$('#pull-up').hide().fadeIn(1000);
+
+
 });
